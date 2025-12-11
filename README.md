@@ -1,5 +1,5 @@
 # AutoCardLinkRenderer
-
+日本語版 -> https://github.com/Rerurate514/AutoCardLinkRenderer/blob/master/README-ja.md
 ## Usage
 
 This is a Transformers plugin for Quartz.
