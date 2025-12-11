@@ -2,8 +2,8 @@
   "name": "autocardlinkrenderer",
   "version": "1.0.0",
   "description": "",
-  "license": "ISC",
-  "author": "",
+  "license": "MIT",
+  "author": "Rerurate_514",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
