@@ -8,6 +8,7 @@
     color: var(--dark);
     overflow: hidden;
     position: relative;
+    height: 10em;
 
     &:hover {
         background-color: var(--lightgray);
@@ -17,23 +18,22 @@
         position: absolute;
         top: 6px;
         right: 6px;
-        z-index: 10;
     }
 }
 
 .cardlink-contents {
     display: flex;
-    flex-direction: row;
     min-width: 0;
-    height: 150px;
 }
 
 .cardlink-image {
-    height: 100%;
-    margin: 0;
-    width: auto;
-    min-width: 0;
+    width: unset !important;
     border-radius: 0;
+    height: 100%;
+    object-fit: cover;
+    max-width: 50% !important;
+    pointer-events: none;
+    margin: 0;
 }
 
 .cardlink-content {
@@ -52,7 +52,7 @@
 
 .cardlink-description {
     font-size: 0.9em;
-    max-height: 4em;
+    max-height: 80px;
     margin-bottom: 8px;
     color: var(--dark);
     overflow: hidden;
