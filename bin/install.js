@@ -14,12 +14,12 @@ async function main() {
     }
 
     try {
-        const transformerSrc = path.join(__dirname, '..', 'templates', 'quartz', 'plugins', 'transformers', 'aclr.ts');
+        const transformerSrc = path.join(__dirname, '..', 'template', 'quartz', 'plugins', 'transformers', 'aclr.ts');
         const transformerDest = path.join(quartzDir, 'plugins', 'transformers', 'aclr.ts');
         await fs.copy(transformerSrc, transformerDest);
         console.log('✅ Transformer plugin copied: quartz/plugins/transformers/aclr.ts');
 
-        const styleSrc = path.join(__dirname, '..', 'templates', 'quartz', 'components', 'styles', 'autoCardLink.inline.scss');
+        const styleSrc = path.join(__dirname, '..', 'template', 'quartz', 'components', 'styles', 'autoCardLink.inline.scss');
         const styleDest = path.join(quartzDir, 'components', 'styles', 'autoCardLink.inline.scss');
         await fs.copy(styleSrc, styleDest);
         console.log('✅ Style file copied: quartz/components/styles/autoCardLink.inline.scss');
