@@ -1,31 +1,37 @@
 # AutoCardLinkRenderer
-## 使い方
-これはQuartzのTransformersのプラグインになります。
-このPluginを使用するには、以下のコマンドをQuartzプロジェクトのルートディレクトリで実行します。
+
+## Usage
+
+This is a Transformers plugin for Quartz.
+
+To use this plugin, run the following command in the root directory of your Quartz project:
+
 ```shell
 npx create-quartz-autocardlinkrenderer@latest
 ```
 
-このコマンドを実行すると
+Running this command will generate files at:
 - `quartz/components/style/autoCardLink.inline.scss`
 - `quartz/plugins/transformers/aslr.ts`
-にそれぞれファイルが生成されます。
 
-そして、生成された`quartz/plugins/transformers/aslr.ts`を`quartz/plugins/transformers/index.ts`にインポートします。
+Then, import the generated `quartz/plugins/transformers/aslr.ts` in `quartz/plugins/transformers/index.ts`:
+
 ```ts
 export { AutoCardLinkRenderer } from "./aclr"
 ```
 
-さらに、`quartz.config.ts`の`transformers`セクションにこれを挿入します。
+Additionally, insert this into the `transformers` section of `quartz.config.ts`:
+
 ```ts
 Plugin.AutoCardLinkRenderer(),
 ```
 
-これで完成です！！
+That's it!!
 
-## 顔たち
-- 通常時
+## Appearance
+
+- Normal state
 <img width="1086" height="181" alt="image" src="https://github.com/user-attachments/assets/1ea1787f-35f6-4a2a-ba73-7d8631285389" />
 
-- hover時
+- On hover
 <img width="1085" height="175" alt="image" src="https://github.com/user-attachments/assets/2db9fdf4-2d0b-4c1f-8934-2b4357dab7ac" />
