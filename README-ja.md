@@ -1,6 +1,7 @@
 # AutoCardLinkRenderer
 ## 使い方
 これはQuartzのTransformersのプラグインになります。
+Obsidianのプラグイン：[AutoCardLinkTitle](https://github.com/nekoshita/obsidian-auto-card-link)をQuartzでレンダリングできるようにするものです。
 このPluginを使用するには、以下のコマンドをQuartzプロジェクトのルートディレクトリで実行します。
 ```shell
 npx create-quartz-autocardlinkrenderer@latest
