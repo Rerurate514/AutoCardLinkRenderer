@@ -34,6 +34,10 @@
     max-width: 50% !important;
     pointer-events: none;
     margin: 0;
+
+    @media (max-width: 700px) {
+        display: none !important;
+    }
 }
 
 .cardlink-content {
