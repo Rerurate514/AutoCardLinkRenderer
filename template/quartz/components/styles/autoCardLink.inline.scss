@@ -22,24 +22,21 @@
 }
 
 .cardlink-contents {
-    flex-grow: 1;
     display: flex;
     flex-direction: row;
     min-width: 0;
+    height: 150px;
 }
 
 .cardlink-image {
-    flex: 2 0 0;
     height: 100%;
     margin: 0;
-    object-fit: cover;
-    width: 100%;
+    width: auto;
     min-width: 0;
     border-radius: 0;
 }
 
 .cardlink-content {
-    flex: 5 0 0;
     display: flex;
     flex-direction: column;
     padding: 12px;
@@ -49,19 +46,32 @@
 .cardlink-title {
     font-size: 1.1em;
     font-weight: bold;
-    margin-bottom: 4px;
     color: var(--tertiary);
+    margin-bottom: 4px;
 }
 
 .cardlink-description {
     font-size: 0.9em;
+    max-height: 4em;
     margin-bottom: 8px;
     color: var(--dark);
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+}
+
+.cardlink-info {
+    margin-top: auto;
 }
 
 .cardlink-favicon {
     width: 16px;
     height: 16px;
+    margin: 0 0;
     margin-right: 8px;
     vertical-align: middle;
 }

@@ -63,7 +63,7 @@ export const AutoCardLinkRenderer: QuartzTransformerPlugin = () => {
                                                         <div class="cardlink-content">
                                                             <div class="cardlink-title">${title}</div>
                                                             <div class="cardlink-description">${description}</div>
-                                                            <div>
+                                                            <div class="cardlink-info">
                                                                 <img class="cardlink-favicon" src="${favicon}" alt="${host}"></img>
                                                                 <span class="cardlink-host">${host}</span>
                                                             </div>
@@ -81,7 +81,7 @@ export const AutoCardLinkRenderer: QuartzTransformerPlugin = () => {
                                                         <div class="cardlink-content">
                                                             <div class="cardlink-title">${title}</div>
                                                             <div class="cardlink-description">${description}</div>
-                                                            <div>
+                                                            <div class="cardlink-info">
                                                                 <img class="cardlink-favicon" src="${favicon}" alt="${host}"></img>
                                                                 <span class="cardlink-host">${host}</span>
                                                             </div>
@@ -100,7 +100,9 @@ export const AutoCardLinkRenderer: QuartzTransformerPlugin = () => {
                                                         <div class="cardlink-content">
                                                             <div class="cardlink-title">${title}</div>
                                                             <div class="cardlink-description">${description}</div>
-                                                            <span class="cardlink-host">${host}</span>
+                                                            <div class="cardlink-info">
+                                                                <span class="cardlink-host">${host}</span>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </a>
@@ -115,7 +117,9 @@ export const AutoCardLinkRenderer: QuartzTransformerPlugin = () => {
                                                         <div class="cardlink-content">
                                                             <div class="cardlink-title">${title}</div>
                                                             <div class="cardlink-description">${description}</div>
-                                                            <span class="cardlink-host">${host}</span>
+                                                            <div class="cardlink-info">
+                                                                <span class="cardlink-host">${host}</span>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </a>
