@@ -1,0 +1,71 @@
+.cardlink-box {
+    display: flex;
+    text-decoration: none;
+    border: 1px solid var(--dark);
+    border-radius: 8px;
+    margin: 16px 0;
+    transition: box-shadow 0.3s ease;
+    color: var(--dark);
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+        background-color: var(--lightgray);
+    }
+
+    svg {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        z-index: 10;
+    }
+}
+
+.cardlink-contents {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    min-width: 0;
+}
+
+.cardlink-image {
+    flex: 2 0 0;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    width: 100%;
+    min-width: 0;
+    border-radius: 0;
+}
+
+.cardlink-content {
+    flex: 5 0 0;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    min-width: 0;
+}
+
+.cardlink-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: var(--tertiary);
+}
+
+.cardlink-description {
+    font-size: 0.9em;
+    margin-bottom: 8px;
+    color: var(--dark);
+}
+
+.cardlink-favicon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.cardlink-host {
+    color: var(--tertiary);
+}
