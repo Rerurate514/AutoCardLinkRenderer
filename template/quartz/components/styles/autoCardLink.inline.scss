@@ -4,14 +4,16 @@
     border: 1px solid var(--dark);
     border-radius: 8px;
     margin: 16px 0;
-    transition: box-shadow 0.3s ease;
+    transition: 0.1s ease-in-out;
     color: var(--dark);
     overflow: hidden;
     position: relative;
     height: 10em;
 
     &:hover {
-        background-color: var(--lightgray);
+        background-color: var(--light);
+        transform: scale(1.02);
+        box-shadow: 3px 3px 5px var(--dark);
     }
 
     svg {
@@ -23,7 +25,19 @@
 
 .cardlink-contents {
     display: flex;
-    min-width: 0;
+}
+
+.cardlink-image-wrapper {
+    border-radius: 0;
+    height: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    pointer-events: none;
+    max-width: 50%;
+
+    // @media (max-width: 700px) {
+    //     display: none !important;
+    // }
 }
 
 .cardlink-image {
@@ -31,7 +45,8 @@
     border-radius: 0;
     height: 100%;
     object-fit: cover;
-    max-width: 50% !important;
+    flex-grow: 0;
+    flex-shrink: 0;
     pointer-events: none;
     margin: 0;
 
@@ -44,7 +59,7 @@
     display: flex;
     flex-direction: column;
     padding: 12px;
-    min-width: 0;
+    flex-grow: 1;
 }
 
 .cardlink-title {
@@ -70,11 +85,12 @@
 
 .cardlink-info {
     margin-top: auto;
+    display: flex;
 }
 
 .cardlink-favicon {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     margin: 0 0;
     margin-right: 8px;
     vertical-align: middle;

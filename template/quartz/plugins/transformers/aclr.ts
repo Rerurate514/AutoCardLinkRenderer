@@ -59,7 +59,9 @@ export const AutoCardLinkRenderer: QuartzTransformerPlugin = () => {
                                             value: `
                                                 <a href="${url}" class="cardlink-box" target="_blank" rel="noopener noreferrer">
                                                     <div class="cardlink-contents">
-                                                        <img class="cardlink-image" src="${image}" alt="${host}"></img>
+                                                        <div class="cardlink-image-wrapper">
+                                                            <img class="cardlink-image" src="${image}" alt="${host}"></img>
+                                                        </div>
                                                         <div class="cardlink-content">
                                                             <div class="cardlink-title">${title}</div>
                                                             <div class="cardlink-description">${description}</div>
@@ -96,7 +98,9 @@ export const AutoCardLinkRenderer: QuartzTransformerPlugin = () => {
                                             value: `
                                                 <a href="${url}" class="cardlink-box" target="_blank" rel="noopener noreferrer">
                                                     <div class="cardlink-contents">
-                                                        <img class="cardlink-image" src="${image}" alt="${host}"></img>
+                                                        <div class="cardlink-image-wrapper">
+                                                            <img class="cardlink-image" src="${image}" alt="${host}"></img>
+                                                        </div>
                                                         <div class="cardlink-content">
                                                             <div class="cardlink-title">${title}</div>
                                                             <div class="cardlink-description">${description}</div>
