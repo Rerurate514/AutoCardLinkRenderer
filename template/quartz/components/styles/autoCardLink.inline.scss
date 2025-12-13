@@ -35,9 +35,9 @@
     pointer-events: none;
     max-width: 50%;
 
-    // @media (max-width: 700px) {
-    //     display: none !important;
-    // }
+    @media (max-width: 700px) {
+        display: none !important;
+    }
 }
 
 .cardlink-image {
@@ -52,6 +52,10 @@
 
     @media (max-width: 700px) {
         display: none !important;
+    }
+    
+    .lightbox-wrapper {
+        max-width: 100% !important;
     }
 }
 
@@ -99,3 +103,4 @@
 .cardlink-host {
     color: var(--tertiary);
 }
+
